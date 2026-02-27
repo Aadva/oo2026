@@ -4,5 +4,4 @@ import ee.mirko.autod.entity.Auto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AutodeRepository extends JpaRepository<Auto, Long> {
-    boolean existsByVinIgnoreCase(String vin);
 }

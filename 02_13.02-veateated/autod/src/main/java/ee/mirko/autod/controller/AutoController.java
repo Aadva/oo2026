@@ -55,16 +55,6 @@ public class AutoController {
         if (auto.getMileage() == null || auto.getMileage() < 0) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Läbisõit ei tohi olla negatiivne.");
         }
-        if (auto.getVin() == null || auto.getVin().isBlank()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "VIN ei tohi olla tühi.");
-        }
-        if (auto.getVin().trim().length() != 17) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "VIN peab olema täpselt 17 märki.");
-        }
-        if (autodeRepository.existsByVinIgnoreCase(auto.getVin().trim())) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Sama VIN-iga auto on juba olemas.");
-        }
-        auto.setVin(auto.getVin().trim().toUpperCase());
         auto.setMark(auto.getMark().trim());
         auto.setModel(auto.getModel().trim());
     }

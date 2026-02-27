@@ -23,10 +23,8 @@ public class Auto {
 
     private String mark;
     private String model;
+    @Column(name = "build_year")
     private Integer year;
     private Double price;
     private Integer mileage;
-
-    @Column(unique = true)
-    private String vin;
 }
