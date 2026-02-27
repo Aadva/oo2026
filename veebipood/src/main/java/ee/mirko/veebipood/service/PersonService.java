@@ -1,7 +1,7 @@
 package ee.mirko.veebipood.service;
 
 import com.github.vladislavgoltjajev.personalcode.locale.estonia.EstonianPersonalCodeValidator;
-import ee.mihkel.veebipood.entity.Person;
+import ee.mirko.veebipood.entity.Person;
 import org.springframework.stereotype.Service;
 
 import java.util.regex.Matcher;
