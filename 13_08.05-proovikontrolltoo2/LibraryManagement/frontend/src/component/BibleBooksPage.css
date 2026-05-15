@@ -1,0 +1,25 @@
+.bible-page {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(145deg, #f8faf5 0%, #eef4ff 55%, #fff8ed 100%);
+}
+
+.bible-page-title {
+  font-weight: 700;
+  color: #1f3552;
+  margin-bottom: 0.35rem;
+}
+
+.bible-page-subtitle {
+  color: #4b5f7b;
+  margin-bottom: 1.2rem;
+}
+
+.bible-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 14px;
+}
+
+.bible-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(31, 53, 82, 0.16) !important;
+}
